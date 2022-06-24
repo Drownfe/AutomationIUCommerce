@@ -6,11 +6,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class Base {
 
 	private WebDriver driver;
-	
 	
 	public Base(WebDriver driver) {
 		this.driver = driver;
@@ -33,7 +33,7 @@ public class Base {
 	public String getText(WebElement element) {
 		return element.getText();
 	}
-	
+
 	public String getText(By locator) {
 		return driver.findElement(locator).getText();
 	}
@@ -61,4 +61,6 @@ public class Base {
 	public void visit(String url) {
 		driver.get(url);
 	}
+	
+	
 }

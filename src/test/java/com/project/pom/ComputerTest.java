@@ -1,7 +1,7 @@
 package com.project.pom;
 
-import static org.junit.Assert.*;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -23,5 +23,11 @@ public class ComputerTest {
 		computerPage.computerSearch();
 		Thread.sleep(2000);
 	}
+	
+	/*@After
+	public void tearDown() throws InterruptedException {
+		Thread.sleep(7000);
+		driver.quit();
+	}*/
 
 }
